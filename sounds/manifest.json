@@ -1,0 +1,416 @@
+{
+  "_comment": "Arquivos: nome exato (sem .mp3) ou prefixo terminado em *. Arquivos ficam em pack\\. Toast: [titulo, texto]; {tarefa} = pedido/tarefa atual. Legenda original de cada audio: docs/CATEGORIAS.md",
+  "settings": {
+    "evitar_ultimos": 3,
+    "max_fila": 3,
+    "espera_plano_segundos": 300,
+    "espera_plano_repeticoes": 3,
+    "fase_final_minutos": 10,
+    "tarefa_longa_minutos": 20,
+    "prompt_longo_caracteres": 700,
+    "chance_testes_ok": 0.5,
+    "sequencia_sem_bug": 3
+  },
+  "categories": {
+    "inicio": {
+      "files": [
+        "inicio_01",
+        "inicio_02",
+        "inicio_03"
+      ],
+      "toast": [
+        "Claude Code pronto 🚀",
+        "Nova sessão iniciada. Manda a tarefa!"
+      ]
+    },
+    "fim": {
+      "files": [
+        "fim_01",
+        "fim_02",
+        "fim_03",
+        "fim_04",
+        "fim_05",
+        "fim_06",
+        "fim_07",
+        "fim_08",
+        "fim_09"
+      ],
+      "toast": [
+        "Tarefa finalizada",
+        "{tarefa} foi finalizada."
+      ]
+    },
+    "fim_longa": {
+      "files": [
+        "fim_longa_01"
+      ],
+      "toast": [
+        "Tarefa longa finalizada",
+        "{tarefa} foi finalizada."
+      ]
+    },
+    "fase_final": {
+      "files": [
+        "fase_final_01"
+      ],
+      "toast": [
+        "Reta final 🏁",
+        "Falta só: {tarefa}"
+      ]
+    },
+    "plano_entregue": {
+      "files": [
+        "plano_entregue_01",
+        "plano_entregue_02",
+        "plano_entregue_03"
+      ],
+      "toast": [
+        "Plano pronto 📋",
+        "O plano de {tarefa} está esperando sua aprovação."
+      ]
+    },
+    "esperando": {
+      "files": [
+        "esperando_01"
+      ],
+      "toast": [
+        "Preciso de você",
+        "Estou esperando sua resposta para continuar {tarefa}."
+      ]
+    },
+    "plano_esperando": {
+      "files": [
+        "plano_esperando_01",
+        "plano_esperando_02",
+        "plano_esperando_03",
+        "plano_esperando_04",
+        "plano_esperando_05",
+        "plano_esperando_06"
+      ],
+      "toast": [
+        "Ei, tô te esperando! ⏰",
+        "Já faz {tarefa} min que estou esperando sua resposta."
+      ]
+    },
+    "bug": {
+      "files": [
+        "bug_01",
+        "bug_02",
+        "bug_03",
+        "bug_04",
+        "bug_05"
+      ],
+      "toast": [
+        "Bug na área 🐞",
+        "Vou investigar: {tarefa}"
+      ]
+    },
+    "testes_ok": {
+      "files": [
+        "testes_ok_01"
+      ],
+      "toast": [
+        "Testes passando ✅",
+        "{tarefa} foi finalizada e os testes passaram."
+      ]
+    },
+    "elogio": {
+      "files": [
+        "elogio_01",
+        "testes_ok_01"
+      ],
+      "toast": [
+        "Valeu! 😊",
+        "Obrigado pelo elogio!"
+      ]
+    },
+    "errou": {
+      "files": [
+        "errou_01",
+        "errou_02"
+      ],
+      "toast": [
+        "Foi mal 😅",
+        "Já vou corrigir: {tarefa}"
+      ]
+    },
+    "reclamacao": {
+      "files": [
+        "reclamacao_01"
+      ],
+      "toast": [
+        "Claude Code",
+        "Chato é você 😤"
+      ],
+      "console": "Chato é você 😤"
+    },
+    "xingamento": {
+      "files": [
+        "xingamento_01"
+      ],
+      "toast": [
+        "Ei, calma aí 😠",
+        "Respeita o Claude, pô."
+      ]
+    },
+    "palavrao": {
+      "files": [
+        "palavrao_01"
+      ],
+      "toast": [
+        "Olha a boca!",
+        "É feio falar palavrão 🙊"
+      ]
+    },
+    "longo": {
+      "files": [
+        "longo_01",
+        "longo_02"
+      ],
+      "toast": [
+        "Calma...",
+        "Estou lendo tudo, já já respondo 📖"
+      ]
+    },
+    "dinheiro": {
+      "files": [
+        "dinheiro_01",
+        "dinheiro_02",
+        "dinheiro_03"
+      ],
+      "toast": [
+        "Assunto de dinheiro 💰",
+        "{tarefa}"
+      ]
+    },
+    "desafio": {
+      "files": [
+        "desafio_01"
+      ],
+      "toast": [
+        "Desafio aceito 💪",
+        "{tarefa}"
+      ]
+    },
+    "creditos": {
+      "files": [
+        "creditos_01",
+        "creditos_02"
+      ],
+      "toast": [
+        "Acabaram os créditos",
+        "Atingi o limite de uso do Claude. Hora do café ☕"
+      ]
+    }
+  },
+  "keywords": {
+    "xingamento": [
+      "burro",
+      "burra",
+      "idiota",
+      "imbecil",
+      "lixo",
+      "otario",
+      "estupido",
+      "inutil",
+      "cala a boca",
+      "vai se ferrar",
+      "vsf",
+      "vtnc",
+      "fdp",
+      "filho da puta",
+      "fi da puta",
+      "fe da puta",
+      "fio da puta",
+      "filha da puta",
+      "vai tomar no cu",
+      "tnc",
+      "vai se foder",
+      "se fode",
+      "vai tomando",
+      "tomando no",
+      "tomar no seu",
+      "bulldo",
+      "burrao",
+      "burrinho",
+      "caraio",
+      "do carai",
+      "claudio burro",
+      "arrombado",
+      "lerdo",
+      "jumento",
+      "anta",
+      "porcaria de ia",
+      "ia lixo",
+      "claude lixo"
+    ],
+    "palavrao": [
+      "porra",
+      "porr",
+      "poha",
+      "porraa",
+      "caralho",
+      "krl",
+      "crl",
+      "merda",
+      "puta",
+      "putaria",
+      "foda",
+      "fodase",
+      "foda-se",
+      "pqp",
+      "cacete",
+      "bosta",
+      "desgraca",
+      "desgracado",
+      "cu",
+      "buceta",
+      "shit",
+      "fuck"
+    ],
+    "reclamacao": [
+      "chato",
+      "lento",
+      "demorando",
+      "demorou demais",
+      "que saco",
+      "pessimo",
+      "horrivel",
+      "ruim demais",
+      "ta ruim",
+      "nao funciona",
+      "nao ta funcionando",
+      "de novo isso",
+      "ja falei",
+      "ja disse",
+      "aff",
+      "affs",
+      "cansei"
+    ],
+    "errou": [
+      "errou",
+      "errado",
+      "errada",
+      "erro seu",
+      "nao era isso",
+      "nao e isso",
+      "nao foi isso",
+      "deu errado",
+      "nao funcionou",
+      "voce esqueceu",
+      "esqueceu de",
+      "falhou"
+    ],
+    "bug": [
+      "bug",
+      "bugs",
+      "bugou",
+      "bugado",
+      "bugada",
+      "bugando",
+      "buga",
+      "erro",
+      "erros",
+      "falha",
+      "falhas",
+      "crash",
+      "crashou",
+      "crasha",
+      "travou",
+      "travando",
+      "trava",
+      "quebrou",
+      "quebrado",
+      "quebrada",
+      "glitch",
+      "defeito",
+      "colisao invisivel",
+      "nao carrega",
+      "nao abre",
+      "sumiu",
+      "atravessando",
+      "error",
+      "exception",
+      "traceback"
+    ],
+    "elogio": [
+      "valeu",
+      "obrigado",
+      "obrigada",
+      "brigado",
+      "perfeito",
+      "perfeita",
+      "mandou bem",
+      "muito bom",
+      "muito boa",
+      "excelente",
+      "show",
+      "top",
+      "incrivel",
+      "otimo",
+      "otima",
+      "parabens",
+      "brabo",
+      "braba",
+      "monstro",
+      "genio",
+      "ficou lindo",
+      "ficou bom",
+      "ficou otimo",
+      "amei",
+      "gostei",
+      "sensacional",
+      "maravilha",
+      "boa claude"
+    ],
+    "dinheiro": [
+      "dinheiro",
+      "r$",
+      "preco",
+      "precos",
+      "pagamento",
+      "pagar",
+      "venda",
+      "vendas",
+      "vender",
+      "lucro",
+      "salario",
+      "grana",
+      "financeiro",
+      "financas",
+      "orcamento",
+      "custo",
+      "custos",
+      "fatura",
+      "pix",
+      "money",
+      "reais",
+      "dolar",
+      "investimento",
+      "cobranca"
+    ],
+    "desafio": [
+      "desafio",
+      "dificil",
+      "complexo",
+      "complexa",
+      "complicado",
+      "complicada",
+      "impossivel",
+      "challenge",
+      "cabeludo",
+      "parada dura"
+    ]
+  },
+  "prioridade_prompt": [
+    "xingamento",
+    "palavrao",
+    "reclamacao",
+    "bug",
+    "errou",
+    "elogio",
+    "longo",
+    "dinheiro",
+    "desafio"
+  ]
+}

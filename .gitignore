@@ -1,0 +1,8 @@
+# estado gerado em tempo de execucao
+sounds/state.json
+sounds/sfx.log
+sounds/queue/
+sounds/muted.flag
+*.bak
+*.tmp
+__pycache__/
